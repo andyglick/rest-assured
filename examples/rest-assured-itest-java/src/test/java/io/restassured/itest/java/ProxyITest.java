@@ -42,6 +42,7 @@ import static io.restassured.specification.ProxySpecification.host;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 
+@Ignore
 public class ProxyITest extends WithJetty {
 
     static HttpProxyServer proxyServer;

@@ -33,6 +33,7 @@ import static io.restassured.specification.ProxySpecification.host;
 import static org.hamcrest.Matchers.emptyOrNullString;
 import static org.hamcrest.Matchers.not;
 
+@Ignore
 public class ProxyAuthITest extends WithJetty {
 
     static HttpProxyServer proxyServer;
