@@ -15,33 +15,40 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>rest-assured-parent</artifactId>
-        <groupId>io.rest-assured</groupId>
-        <version>4.2.1-SNAPSHOT</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>io.rest-assured.examples</groupId>
-    <artifactId>example-parent</artifactId>
-    <packaging>pom</packaging>
-    <name>REST Assured Examples</name>
-    <modules>
-        <module>scalatra-example</module>
-        <module>scalatra-webapp</module>
-        <module>rest-assured-itest-java</module>
-        <module>spring-mvc-webapp</module>
-        <module>scala-example</module>
-        <module>scala-mock-mvc-example</module>
-        <module>kotlin-example</module>
-    </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+  http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <profiles>
-        <profile>
-            <id>osgi-tests</id>
-            <modules>
-                <module>rest-assured-itest-java-osgi</module>
-            </modules>
-        </profile>
-    </profiles>
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>rest-assured-parent</artifactId>
+    <groupId>io.rest-assured</groupId>
+    <version>4.2.1-SNAPSHOT</version>
+  </parent>
+
+  <groupId>io.rest-assured.examples</groupId>
+  <artifactId>example-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>REST Assured Examples</name>
+
+  <modules>
+    <module>scalatra-example</module>
+    <module>scalatra-webapp</module>
+    <module>rest-assured-itest-java</module>
+    <module>spring-mvc-webapp</module>
+    <module>scala-example</module>
+    <module>scala-mock-mvc-example</module>
+    <module>kotlin-example</module>
+  </modules>
+
+  <profiles>
+    <profile>
+      <id>osgi-tests</id>
+      <modules>
+        <module>rest-assured-itest-java-osgi</module>
+      </modules>
+    </profile>
+  </profiles>
 </project>
